@@ -1,0 +1,17 @@
+services:
+  home-monitor:
+    build: .
+    image: home-monitor:latest
+    container_name: home-monitor
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - TZ=Asia/Jakarta
+      - PORT=8080
+    volumes:
+      - ./data:/app/data
+      - ./static:/app/static:ro
+      - /sys:/sys:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro

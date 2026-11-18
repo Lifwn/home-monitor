@@ -1,0 +1,17 @@
+{
+  "port": 8080,
+  "host": "0.0.0.0",
+  "auto_scan_interval": 60,
+  "ping_timeout": 1.0,
+  "scan_threads": 48,
+  "webhook_url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL",
+  "webhook_enabled": false,
+  "telegram_token": "",
+  "telegram_chat_id": "",
+  "notify_power": true,
+  "notify_new_devices": true,
+  "notify_speedtest": true,
+  "notify_wol": false,
+  "enable_bot_commands": false,
+  "auto_speedtest_interval_hours": 6
+}
